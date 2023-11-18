@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        title tbr 👍
+    body
+        h1.title tbr 
+
+        .content-container 
+            .tbr-container 
+                each book in tbr 
+                    div(class=`book p-${book.priority}`)
+                        .book__left 
+                            h3.book__title= `${book.title}`
+                            p.book__author= `${book.author}`
+                            p.book__pages= `${book.pageCount}pgs`
+                        .book__right 
+                            .btn.read--btn Read
+
+                h1.book-count= `${tbr.length} books`

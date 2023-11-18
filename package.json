@@ -1,0 +1,21 @@
+{
+  "name": "tbr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss C:/Users/milos/Desktop/tbr/public/css/style.css -w",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "pug": "^3.0.2"
+  }
+}

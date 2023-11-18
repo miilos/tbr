@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #fffcd6;
+  color: #451701;
+  font-family: 'Croissant One', cursive; }
+
+.title {
+  font-size: 7rem;
+  margin: 2rem 4rem;
+  position: relative; }
+  .title::before {
+    content: 'tbr';
+    font-size: inherit;
+    color: #140701;
+    position: absolute;
+    top: .5rem;
+    left: .7rem;
+    z-index: -1; }
+
+.content-container {
+  display: flex;
+  gap: 7rem; }
+
+.tbr-container {
+  margin: 0 4rem 2rem 4rem;
+  width: 50%; }
+
+.book {
+  background-color: #c6ed9a;
+  padding: 2rem;
+  border-bottom: 1px solid #451701;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between; }
+  .book:first-child {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; }
+  .book__title {
+    font-size: 1.9rem; }
+  .book__right {
+    display: flex;
+    align-items: center; }
+
+.p-high {
+  background-color: #c6ed9a; }
+
+.p-mid {
+  background-color: #f8f694; }
+
+.p-low {
+  background-color: #d27c73; }
+
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: #451701;
+  border-radius: 2rem;
+  color: #fffcd6;
+  cursor: pointer; }
+
+.curr-reading__title {
+  font-size: 2.2rem; }
+
+.curr-reading__book {
+  width: 19rem;
+  height: 24rem;
+  margin-top: 1rem;
+  background-color: #451701;
+  border-radius: 1.5rem;
+  color: #fffcd6;
+  position: relative; }
+  .curr-reading__book-info {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 1.5rem; }
+  .curr-reading__book::before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    background-color: #fffcd6;
+    border-radius: inherit;
+    z-index: -1; }
+  .curr-reading__book::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -2.5rem;
+    right: -2.5rem;
+    background-color: #451701;
+    border-radius: inherit;
+    z-index: -2; }
+
+.book-count {
+  margin-top: 2rem; }
